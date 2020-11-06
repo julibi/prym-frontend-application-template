@@ -100,6 +100,13 @@ const SignUpForm = () => {
               />
             </>
           )}
+          <label>{'Additional information'}</label>
+          <textarea
+            className={style.textarea}
+            value='value'
+            onChange={() => {}}
+            rows={5}
+          />
           <input type="submit" value="Submit" className={style.submitButton} />
         </form>
       </fieldset>
