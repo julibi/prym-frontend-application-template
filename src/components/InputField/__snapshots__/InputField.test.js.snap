@@ -1,0 +1,66 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`InputField should fire onChange prop 1`] = `
+<div>
+  <label
+    class="label"
+    for="name"
+  >
+    label
+  </label>
+  <input
+    class="inputField"
+    name="name"
+    placeholder="test"
+    type="text"
+    value=""
+  />
+  <p
+    class="errorMessage"
+  />
+</div>
+`;
+
+exports[`InputField should render correctly with all optional props provided 1`] = `
+<div>
+  <label
+    class="label"
+    for="name"
+  >
+    label
+  </label>
+  <input
+    class="inputField className"
+    name="name"
+    placeholder="test"
+    type="password"
+    value=""
+  />
+  <p
+    class="errorMessage"
+  >
+    errorMessage
+  </p>
+</div>
+`;
+
+exports[`InputField should render correctly with props 1`] = `
+<div>
+  <label
+    class="label"
+    for="name"
+  >
+    label
+  </label>
+  <input
+    class="inputField"
+    name="name"
+    placeholder="test"
+    type="text"
+    value=""
+  />
+  <p
+    class="errorMessage"
+  />
+</div>
+`;

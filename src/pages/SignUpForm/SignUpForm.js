@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useDispatch } from 'react-redux';
 import InputField from '../../components/InputField';
 import { useLocalStorage } from '../../hooks/useLocalStorage';
-import { SIGNUP } from '../../redux/actions/actions';
+import { SIGNUP } from '../../redux/signUp/actions/signUp.actions';
 import style from './SignUpForm.module.scss';
 
 const SignUpForm = () => {
@@ -15,6 +15,7 @@ const SignUpForm = () => {
     zip: 5,
     city: 4
   };
+
   let initialState = {
     lastname: '',
     firstname: '',
@@ -46,14 +47,17 @@ const SignUpForm = () => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    console.log('formData inside SignUpForm: ', formData);
+    setFormData(initialState);
+    setFormDataLS(initialState);
+    setFormErrors(initialState)
     dispatch(SIGNUP(formData));
+    alert('Form was submitted');
   };
 
   const handleInput = (event) => {
     const { name, value } = event.target;
     setFormData({ ...formData, [name]: value });
-    setFormDataLS(formData);
+    setFormDataLS({ ...formData, [name]: value });
   };
 
   const fieldLengthError = (maxLength) => {
@@ -89,6 +93,9 @@ const SignUpForm = () => {
     if(formData.city.length < minLengths.city) {
       errors = {...errors, city: fieldLengthError(minLengths.city)};
     }
+    if(formData == initialState) {
+      errors = {};
+    }
     setFormErrors(errors);
   }, [formData]);
 
@@ -121,6 +128,7 @@ const SignUpForm = () => {
           <InputField
             value={formData.lastname}
             label='Last name'
+            placeholder='Mustermann'
             name='lastname'
             onChange={handleInput}
             errorMessage={formErrors.lastname}
@@ -128,6 +136,7 @@ const SignUpForm = () => {
           <InputField
             value={formData.firstname}
             label='First name'
+            placeholder='Maxime'
             name='firstname'
             onChange={handleInput}
             errorMessage={formErrors.firstname}
@@ -135,12 +144,14 @@ const SignUpForm = () => {
           <InputField
             value={formData.nickname}
             label='Nick name'
+            placeholder='Maxi'
             name='nickname'
             onChange={handleInput}
           />
           <InputField
             value={formData.email}
             label='Email'
+            placeholder='Maxi@gmail.com'
             name='email'
             onChange={handleInput}
             errorMessage={formErrors.email}
@@ -149,6 +160,7 @@ const SignUpForm = () => {
             value={formData.password}
             label='Password'
             name='password'
+            placeholder='Your smart password'
             type='password'
             onChange={handleInput}
             errorMessage={formErrors.password}
@@ -157,6 +169,7 @@ const SignUpForm = () => {
             value={formData.pwdConfirmation}
             label='Repeat password'
             name='pwdConfirmation'
+            placeholder='1d!43g@OY05twm'
             type='password'
             onChange={handleInput}
             errorMessage={formErrors.pwdConfirmation}
@@ -174,6 +187,7 @@ const SignUpForm = () => {
               <InputField
                 value={formData.street}
                 label='Street'
+                placeholder='Mustermann Straße'
                 name='street'
                 onChange={handleInput}
                 errorMessage={formErrors.street}
@@ -181,6 +195,7 @@ const SignUpForm = () => {
               <InputField
                 value={formData.house}
                 label='House/Apartment'
+                placeholder='10'
                 name='house'
                 onChange={handleInput}
                 errorMessage={formErrors.house}
@@ -188,6 +203,7 @@ const SignUpForm = () => {
               <InputField
                 value={formData.zip}
                 label='ZIP'
+                placeholder='11233'
                 name='zip'
                 onChange={handleInput}
                 errorMessage={formErrors.zip}
@@ -195,6 +211,7 @@ const SignUpForm = () => {
               <InputField
                 value={formData.city}
                 label='City'
+                placeholder='Porto'
                 name='city'
                 onChange={handleInput}
                 errorMessage={formErrors.city}

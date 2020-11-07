@@ -13,15 +13,16 @@
     "styled-components": "^5.2.1"
   },
   "devDependencies": {
-    "react-scripts": "3.4.1",
-    "node-sass": "^4.14.1",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
     "@types/react-redux": "^7.1.9",
     "@types/reselect": "^2.2.0",
+    "node-sass": "^4.14.1",
     "onchange": "^7.0.2",
-    "prettier": "^2.0.5"
+    "prettier": "^2.0.5",
+    "react-scripts": "3.4.1",
+    "redux-devtools-extension": "^2.13.8"
   },
   "scripts": {
     "start": "react-scripts start",

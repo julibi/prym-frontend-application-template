@@ -1,0 +1,960 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SignUpForm email field must match valid e-mail pattern 1`] = `
+<div>
+  <div
+    class="signUpWrapper"
+  >
+    <fieldset>
+      <form>
+        <label
+          class="label"
+          for="lastname"
+        >
+          Last name
+        </label>
+        <input
+          class="inputField"
+          name="lastname"
+          placeholder="Mustermann"
+          type="text"
+          value="Yi"
+        />
+        <p
+          class="errorMessage"
+        />
+        <label
+          class="label"
+          for="firstname"
+        >
+          First name
+        </label>
+        <input
+          class="inputField"
+          name="firstname"
+          placeholder="Maxime"
+          type="text"
+          value=""
+        />
+        <p
+          class="errorMessage"
+        >
+          This field must contain at least 2 characters.
+        </p>
+        <label
+          class="label"
+          for="nickname"
+        >
+          Nick name
+        </label>
+        <input
+          class="inputField"
+          name="nickname"
+          placeholder="Maxi"
+          type="text"
+          value=""
+        />
+        <p
+          class="errorMessage"
+        />
+        <label
+          class="label"
+          for="email"
+        >
+          Email
+        </label>
+        <input
+          class="inputField"
+          name="email"
+          placeholder="Maxi@gmail.com"
+          type="text"
+          value="@IamA@fake@mail"
+        />
+        <p
+          class="errorMessage"
+        >
+          This field must contain a valid email address.
+        </p>
+        <label
+          class="label"
+          for="password"
+        >
+          Password
+        </label>
+        <input
+          class="inputField"
+          name="password"
+          placeholder="Your smart password"
+          type="password"
+          value=""
+        />
+        <p
+          class="errorMessage"
+        >
+          This field must contain at least 6 characters.
+        </p>
+        <label
+          class="label"
+          for="pwdConfirmation"
+        >
+          Repeat password
+        </label>
+        <input
+          class="inputField"
+          name="pwdConfirmation"
+          placeholder="1d!43g@OY05twm"
+          type="password"
+          value=""
+        />
+        <p
+          class="errorMessage"
+        />
+        <label>
+          Show address
+        </label>
+        <input
+          class="checkbox"
+          type="checkbox"
+        />
+        <br />
+        <label>
+          Additional information
+        </label>
+        <textarea
+          class="textarea"
+          name="additionalInfo"
+          rows="5"
+        />
+        <input
+          class="submitButton"
+          disabled=""
+          type="submit"
+          value="Submit"
+        />
+      </form>
+    </fieldset>
+  </div>
+</div>
+`;
+
+exports[`SignUpForm email field renders correctly with valid email 1`] = `
+<div>
+  <div
+    class="signUpWrapper"
+  >
+    <fieldset>
+      <form>
+        <label
+          class="label"
+          for="lastname"
+        >
+          Last name
+        </label>
+        <input
+          class="inputField"
+          name="lastname"
+          placeholder="Mustermann"
+          type="text"
+          value="Yi"
+        />
+        <p
+          class="errorMessage"
+        />
+        <label
+          class="label"
+          for="firstname"
+        >
+          First name
+        </label>
+        <input
+          class="inputField"
+          name="firstname"
+          placeholder="Maxime"
+          type="text"
+          value=""
+        />
+        <p
+          class="errorMessage"
+        >
+          This field must contain at least 2 characters.
+        </p>
+        <label
+          class="label"
+          for="nickname"
+        >
+          Nick name
+        </label>
+        <input
+          class="inputField"
+          name="nickname"
+          placeholder="Maxi"
+          type="text"
+          value=""
+        />
+        <p
+          class="errorMessage"
+        />
+        <label
+          class="label"
+          for="email"
+        >
+          Email
+        </label>
+        <input
+          class="inputField"
+          name="email"
+          placeholder="Maxi@gmail.com"
+          type="text"
+          value="valid@email.com"
+        />
+        <p
+          class="errorMessage"
+        />
+        <label
+          class="label"
+          for="password"
+        >
+          Password
+        </label>
+        <input
+          class="inputField"
+          name="password"
+          placeholder="Your smart password"
+          type="password"
+          value=""
+        />
+        <p
+          class="errorMessage"
+        >
+          This field must contain at least 6 characters.
+        </p>
+        <label
+          class="label"
+          for="pwdConfirmation"
+        >
+          Repeat password
+        </label>
+        <input
+          class="inputField"
+          name="pwdConfirmation"
+          placeholder="1d!43g@OY05twm"
+          type="password"
+          value=""
+        />
+        <p
+          class="errorMessage"
+        />
+        <label>
+          Show address
+        </label>
+        <input
+          class="checkbox"
+          type="checkbox"
+        />
+        <br />
+        <label>
+          Additional information
+        </label>
+        <textarea
+          class="textarea"
+          name="additionalInfo"
+          rows="5"
+        />
+        <input
+          class="submitButton"
+          disabled=""
+          type="submit"
+          value="Submit"
+        />
+      </form>
+    </fieldset>
+  </div>
+</div>
+`;
+
+exports[`SignUpForm lastname field should render correctly when conditions are met 1`] = `
+<div>
+  <div
+    class="signUpWrapper"
+  >
+    <fieldset>
+      <form>
+        <label
+          class="label"
+          for="lastname"
+        >
+          Last name
+        </label>
+        <input
+          class="inputField"
+          name="lastname"
+          placeholder="Mustermann"
+          type="text"
+          value="Yi"
+        />
+        <p
+          class="errorMessage"
+        />
+        <label
+          class="label"
+          for="firstname"
+        >
+          First name
+        </label>
+        <input
+          class="inputField"
+          name="firstname"
+          placeholder="Maxime"
+          type="text"
+          value=""
+        />
+        <p
+          class="errorMessage"
+        >
+          This field must contain at least 2 characters.
+        </p>
+        <label
+          class="label"
+          for="nickname"
+        >
+          Nick name
+        </label>
+        <input
+          class="inputField"
+          name="nickname"
+          placeholder="Maxi"
+          type="text"
+          value=""
+        />
+        <p
+          class="errorMessage"
+        />
+        <label
+          class="label"
+          for="email"
+        >
+          Email
+        </label>
+        <input
+          class="inputField"
+          name="email"
+          placeholder="Maxi@gmail.com"
+          type="text"
+          value=""
+        />
+        <p
+          class="errorMessage"
+        >
+          This field must contain a valid email address.
+        </p>
+        <label
+          class="label"
+          for="password"
+        >
+          Password
+        </label>
+        <input
+          class="inputField"
+          name="password"
+          placeholder="Your smart password"
+          type="password"
+          value=""
+        />
+        <p
+          class="errorMessage"
+        >
+          This field must contain at least 6 characters.
+        </p>
+        <label
+          class="label"
+          for="pwdConfirmation"
+        >
+          Repeat password
+        </label>
+        <input
+          class="inputField"
+          name="pwdConfirmation"
+          placeholder="1d!43g@OY05twm"
+          type="password"
+          value=""
+        />
+        <p
+          class="errorMessage"
+        />
+        <label>
+          Show address
+        </label>
+        <input
+          class="checkbox"
+          type="checkbox"
+        />
+        <br />
+        <label>
+          Additional information
+        </label>
+        <textarea
+          class="textarea"
+          name="additionalInfo"
+          rows="5"
+        />
+        <input
+          class="submitButton"
+          disabled=""
+          type="submit"
+          value="Submit"
+        />
+      </form>
+    </fieldset>
+  </div>
+</div>
+`;
+
+exports[`SignUpForm lastname field should show error Message, when minimum character amount of field is not reached 1`] = `
+<div>
+  <div
+    class="signUpWrapper"
+  >
+    <fieldset>
+      <form>
+        <label
+          class="label"
+          for="lastname"
+        >
+          Last name
+        </label>
+        <input
+          class="inputField"
+          name="lastname"
+          placeholder="Mustermann"
+          type="text"
+          value="Y"
+        />
+        <p
+          class="errorMessage"
+        >
+          This field must contain at least 2 characters.
+        </p>
+        <label
+          class="label"
+          for="firstname"
+        >
+          First name
+        </label>
+        <input
+          class="inputField"
+          name="firstname"
+          placeholder="Maxime"
+          type="text"
+          value=""
+        />
+        <p
+          class="errorMessage"
+        >
+          This field must contain at least 2 characters.
+        </p>
+        <label
+          class="label"
+          for="nickname"
+        >
+          Nick name
+        </label>
+        <input
+          class="inputField"
+          name="nickname"
+          placeholder="Maxi"
+          type="text"
+          value=""
+        />
+        <p
+          class="errorMessage"
+        />
+        <label
+          class="label"
+          for="email"
+        >
+          Email
+        </label>
+        <input
+          class="inputField"
+          name="email"
+          placeholder="Maxi@gmail.com"
+          type="text"
+          value=""
+        />
+        <p
+          class="errorMessage"
+        >
+          This field must contain a valid email address.
+        </p>
+        <label
+          class="label"
+          for="password"
+        >
+          Password
+        </label>
+        <input
+          class="inputField"
+          name="password"
+          placeholder="Your smart password"
+          type="password"
+          value=""
+        />
+        <p
+          class="errorMessage"
+        >
+          This field must contain at least 6 characters.
+        </p>
+        <label
+          class="label"
+          for="pwdConfirmation"
+        >
+          Repeat password
+        </label>
+        <input
+          class="inputField"
+          name="pwdConfirmation"
+          placeholder="1d!43g@OY05twm"
+          type="password"
+          value=""
+        />
+        <p
+          class="errorMessage"
+        />
+        <label>
+          Show address
+        </label>
+        <input
+          class="checkbox"
+          type="checkbox"
+        />
+        <br />
+        <label>
+          Additional information
+        </label>
+        <textarea
+          class="textarea"
+          name="additionalInfo"
+          rows="5"
+        />
+        <input
+          class="submitButton"
+          disabled=""
+          type="submit"
+          value="Submit"
+        />
+      </form>
+    </fieldset>
+  </div>
+</div>
+`;
+
+exports[`SignUpForm password renders correctly when at least 6 characters long and container at least 2 digist 1`] = `
+<div>
+  <div
+    class="signUpWrapper"
+  >
+    <fieldset>
+      <form>
+        <label
+          class="label"
+          for="lastname"
+        >
+          Last name
+        </label>
+        <input
+          class="inputField"
+          name="lastname"
+          placeholder="Mustermann"
+          type="text"
+          value="Yi"
+        />
+        <p
+          class="errorMessage"
+        />
+        <label
+          class="label"
+          for="firstname"
+        >
+          First name
+        </label>
+        <input
+          class="inputField"
+          name="firstname"
+          placeholder="Maxime"
+          type="text"
+          value=""
+        />
+        <p
+          class="errorMessage"
+        >
+          This field must contain at least 2 characters.
+        </p>
+        <label
+          class="label"
+          for="nickname"
+        >
+          Nick name
+        </label>
+        <input
+          class="inputField"
+          name="nickname"
+          placeholder="Maxi"
+          type="text"
+          value=""
+        />
+        <p
+          class="errorMessage"
+        />
+        <label
+          class="label"
+          for="email"
+        >
+          Email
+        </label>
+        <input
+          class="inputField"
+          name="email"
+          placeholder="Maxi@gmail.com"
+          type="text"
+          value="valid@email.com"
+        />
+        <p
+          class="errorMessage"
+        />
+        <label
+          class="label"
+          for="password"
+        >
+          Password
+        </label>
+        <input
+          class="inputField"
+          name="password"
+          placeholder="Your smart password"
+          type="password"
+          value="short"
+        />
+        <p
+          class="errorMessage"
+        >
+          This field must contain at least 6 characters.
+        </p>
+        <label
+          class="label"
+          for="pwdConfirmation"
+        >
+          Repeat password
+        </label>
+        <input
+          class="inputField"
+          name="pwdConfirmation"
+          placeholder="1d!43g@OY05twm"
+          type="password"
+          value="s2hort5!fd6"
+        />
+        <p
+          class="errorMessage"
+        >
+          The passwords have to be identical.
+        </p>
+        <label>
+          Show address
+        </label>
+        <input
+          class="checkbox"
+          type="checkbox"
+        />
+        <br />
+        <label>
+          Additional information
+        </label>
+        <textarea
+          class="textarea"
+          name="additionalInfo"
+          rows="5"
+        />
+        <input
+          class="submitButton"
+          disabled=""
+          type="submit"
+          value="Submit"
+        />
+      </form>
+    </fieldset>
+  </div>
+</div>
+`;
+
+exports[`SignUpForm password shows error when input is too short (or contains not enough digits) 1`] = `
+<div>
+  <div
+    class="signUpWrapper"
+  >
+    <fieldset>
+      <form>
+        <label
+          class="label"
+          for="lastname"
+        >
+          Last name
+        </label>
+        <input
+          class="inputField"
+          name="lastname"
+          placeholder="Mustermann"
+          type="text"
+          value="Yi"
+        />
+        <p
+          class="errorMessage"
+        />
+        <label
+          class="label"
+          for="firstname"
+        >
+          First name
+        </label>
+        <input
+          class="inputField"
+          name="firstname"
+          placeholder="Maxime"
+          type="text"
+          value=""
+        />
+        <p
+          class="errorMessage"
+        >
+          This field must contain at least 2 characters.
+        </p>
+        <label
+          class="label"
+          for="nickname"
+        >
+          Nick name
+        </label>
+        <input
+          class="inputField"
+          name="nickname"
+          placeholder="Maxi"
+          type="text"
+          value=""
+        />
+        <p
+          class="errorMessage"
+        />
+        <label
+          class="label"
+          for="email"
+        >
+          Email
+        </label>
+        <input
+          class="inputField"
+          name="email"
+          placeholder="Maxi@gmail.com"
+          type="text"
+          value="valid@email.com"
+        />
+        <p
+          class="errorMessage"
+        />
+        <label
+          class="label"
+          for="password"
+        >
+          Password
+        </label>
+        <input
+          class="inputField"
+          name="password"
+          placeholder="Your smart password"
+          type="password"
+          value="short"
+        />
+        <p
+          class="errorMessage"
+        >
+          This field must contain at least 6 characters.
+        </p>
+        <label
+          class="label"
+          for="pwdConfirmation"
+        >
+          Repeat password
+        </label>
+        <input
+          class="inputField"
+          name="pwdConfirmation"
+          placeholder="1d!43g@OY05twm"
+          type="password"
+          value=""
+        />
+        <p
+          class="errorMessage"
+        >
+          The passwords have to be identical.
+        </p>
+        <label>
+          Show address
+        </label>
+        <input
+          class="checkbox"
+          type="checkbox"
+        />
+        <br />
+        <label>
+          Additional information
+        </label>
+        <textarea
+          class="textarea"
+          name="additionalInfo"
+          rows="5"
+        />
+        <input
+          class="submitButton"
+          disabled=""
+          type="submit"
+          value="Submit"
+        />
+      </form>
+    </fieldset>
+  </div>
+</div>
+`;
+
+exports[`SignUpForm submit button only is disabled when all required fields are filled in and valid 1`] = `
+<div>
+  <div
+    class="signUpWrapper"
+  >
+    <fieldset>
+      <form>
+        <label
+          class="label"
+          for="lastname"
+        >
+          Last name
+        </label>
+        <input
+          class="inputField"
+          name="lastname"
+          placeholder="Mustermann"
+          type="text"
+          value="Kent"
+        />
+        <p
+          class="errorMessage"
+        />
+        <label
+          class="label"
+          for="firstname"
+        >
+          First name
+        </label>
+        <input
+          class="inputField"
+          name="firstname"
+          placeholder="Maxime"
+          type="text"
+          value=""
+        />
+        <p
+          class="errorMessage"
+        >
+          This field must contain at least 2 characters.
+        </p>
+        <label
+          class="label"
+          for="nickname"
+        >
+          Nick name
+        </label>
+        <input
+          class="inputField"
+          name="nickname"
+          placeholder="Maxi"
+          type="text"
+          value=""
+        />
+        <p
+          class="errorMessage"
+        />
+        <label
+          class="label"
+          for="email"
+        >
+          Email
+        </label>
+        <input
+          class="inputField"
+          name="email"
+          placeholder="Maxi@gmail.com"
+          type="text"
+          value="valid@email.com"
+        />
+        <p
+          class="errorMessage"
+        />
+        <label
+          class="label"
+          for="password"
+        >
+          Password
+        </label>
+        <input
+          class="inputField"
+          name="password"
+          placeholder="Your smart password"
+          type="password"
+          value="short"
+        />
+        <p
+          class="errorMessage"
+        >
+          This field must contain at least 6 characters.
+        </p>
+        <label
+          class="label"
+          for="pwdConfirmation"
+        >
+          Repeat password
+        </label>
+        <input
+          class="inputField"
+          name="pwdConfirmation"
+          placeholder="1d!43g@OY05twm"
+          type="password"
+          value="s2hort5!fd6"
+        />
+        <p
+          class="errorMessage"
+        >
+          The passwords have to be identical.
+        </p>
+        <label>
+          Show address
+        </label>
+        <input
+          class="checkbox"
+          type="checkbox"
+        />
+        <br />
+        <label>
+          Additional information
+        </label>
+        <textarea
+          class="textarea"
+          name="additionalInfo"
+          rows="5"
+        />
+        <input
+          class="submitButton"
+          disabled=""
+          type="submit"
+          value="Submit"
+        />
+      </form>
+    </fieldset>
+  </div>
+</div>
+`;

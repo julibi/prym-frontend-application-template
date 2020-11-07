@@ -22,4 +22,4 @@ const signUpReducer = (state = initialState, action) => {
       return state;
   }
 };
-export { signUpReducer };
+export { signUpReducer, initialState };
