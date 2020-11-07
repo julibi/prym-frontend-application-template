@@ -6,7 +6,7 @@ import SignUpForm from './pages/SignUpForm';
 
 function App() {
   return(
-    <div className={style.rock}>Lets Rock! 🤘
+    <div className={style.rock}>Let's Rock! 🤘
       <SignUpForm />
     </div>
   );

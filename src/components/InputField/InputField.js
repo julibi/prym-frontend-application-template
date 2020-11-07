@@ -3,7 +3,7 @@ import classNames from 'classnames';
 
 import style from "./InputField.module.scss";
 
-const InputField = ({ className,  error,  label,  name, onChange, onBlur, type = 'text', value }) => {
+const InputField = ({ className, errorMessage, label, name, onChange, type = 'text', value }) => {
   return(
     <>
       <label
@@ -18,9 +18,8 @@ const InputField = ({ className,  error,  label,  name, onChange, onBlur, type =
         name={name}
         type={type}
         onChange={onChange}
-        onBlur={onBlur}
       />
-      <p className={style.errorMessage}>{error}</p>
+      <p className={style.errorMessage}>{errorMessage}</p>
     </>
   );
 };
