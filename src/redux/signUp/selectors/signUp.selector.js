@@ -2,6 +2,6 @@ import { createSelector } from "reselect";
 
 const getSignUp = (state) => state.signUp;
 
-const signUpSelector = createSelector([getSignUp], (signUp) => signUp);
+const getUsername = createSelector([getSignUp], (signUp) => signUp.firstname);
 
-export { signUpSelector };
+export { getSignUp, getUsername };
